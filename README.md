@@ -30,7 +30,7 @@ git commit
 ```
 
 ## Configuration
-The configuration is tested on Windows. It is not guaranteed
+The configuration is tested on Windows. It is not guaranteed to work on other OS.
 
 You have to first download this project with command 
 ```
