@@ -21,3 +21,9 @@ veloped. Despite these improvements, real-time path tracing remains an ongoing c
  interactive applications. In this project, I focused on one of the denoising technique called
  adaptive spatiotemporal variance-guided filtering (A-SVGF) to implement a denoised real time
  path tracer.
+
+## Configuration
+You have to first download this project with command 
+"git clone https://github.com/OnurBasci/Real_Time_Path_Tracing_With_SpatioTemporal_Filtering.git"
+
+This project uses NVIDIA's nvpro_core library (see https://github.com/nvpro-samples/nvpro_core)
