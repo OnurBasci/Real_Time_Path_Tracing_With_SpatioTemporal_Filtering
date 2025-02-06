@@ -21,12 +21,22 @@ _add_nvpro_core_lib()
 # Include nvpro_core
 #add_subdirectory("C:/Users/onurb/Visual_Studio_Projects/IG3DA_Project/Project/deneme_2/nvpro_core")
 
-# Add your own source files
-#add_executable(MyProject main.cpp)
+# Collect C++ source files
+file(GLOB CPP_SOURCES "*.cpp")
 
-file(GLOB PROJECT_SOURCES "*.cpp")
+# Collect shader files
+file(GLOB SHADER_SOURCES "${CMAKE_SOURCE_DIR}/shaders/*.glsl" "${CMAKE_SOURCE_DIR}/shaders/*.spv")
+
+# Mark shader files as header-only so they aren’t compiled.
+set_source_files_properties(${SHADER_SOURCES} PROPERTIES HEADER_FILE_ONLY TRUE)
+
+# Combine the lists
+set(PROJECT_SOURCES ${CPP_SOURCES} ${SHADER_SOURCES})
 
 add_executable(MyProject ${PROJECT_SOURCES})
+
+# Pass the project directory as a macro to your code.
+target_compile_definitions(MyProject PRIVATE PROJECT_SOURCE_DIR="${CMAKE_SOURCE_DIR}")
 
 # Link against nvpro_core
 target_link_libraries(MyProject PRIVATE nvpro_core)

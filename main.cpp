@@ -409,12 +409,12 @@ private:
     void loadMesh(const char** argv) {
         // Load the mesh of the first shape from an OBJ file
         const std::string        exePath(argv[0], std::string(argv[0]).find_last_of("/\\") + 1);
-        searchPaths = { "C:/Users/onurb/Visual_Studio_Projects/IG3DA_Project/dependencies/vk_mini_path_tracer/_edit"};
+        searchPaths = { PROJECT_SOURCE_DIR };//"C:/Users/onurb/Visual_Studio_Projects/IG3DA_Project/dependencies/vk_mini_path_tracer/_edit"};
 
         std::cout << searchPaths[0] << std::endl;
         //std::cout << searchPaths[1] << std::endl;
         tinyobj::ObjReader       reader;  // Used to read an OBJ file
-        reader.ParseFromFile(nvh::findFile("C:/Users/onurb/Visual_Studio_Projects/IG3DA_Project/dependencies/vk_mini_path_tracer/scenes/CornellBox-Original-Merged.obj", searchPaths));
+        reader.ParseFromFile(nvh::findFile("scenes/CornellBox-Original-Merged.obj", searchPaths));
         assert(reader.Valid());  // Make sure tinyobj was able to parse this file
         objVertices = reader.GetAttrib().GetVertices();
         const std::vector<tinyobj::shape_t>& objShapes = reader.GetShapes();  // All shapes in the file
@@ -434,7 +434,7 @@ private:
         std::vector<tinyobj::material_t> materials;
         std::string warn, err;
 
-        const char* path = "C:\\Users\\onurb\\Visual_Studio_Projects\\IG3DA_Project\\dependencies\\vk_mini_path_tracer\\scenes\\CornellBox-Original-Merged.obj";
+        const char* path = PROJECT_SOURCE_DIR "\\scenes\\CornellBox-Original-Merged.obj";
         if (!tinyobj::LoadObj(&attrib, &shapes, &materials, &warn, &err, path)) {
             throw std::runtime_error(warn + err);
         }
