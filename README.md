@@ -24,6 +24,7 @@ veloped. Despite these improvements, real-time path tracing remains an ongoing c
 
 ## Configuration
 You have to first download this project with command 
-"git clone https://github.com/OnurBasci/Real_Time_Path_Tracing_With_SpatioTemporal_Filtering.git"
-
+'''
+git clone https://github.com/OnurBasci/Real_Time_Path_Tracing_With_SpatioTemporal_Filtering.git
+'''
 This project uses NVIDIA's nvpro_core library (see https://github.com/nvpro-samples/nvpro_core)
