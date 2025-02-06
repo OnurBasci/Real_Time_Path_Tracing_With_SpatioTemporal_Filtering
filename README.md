@@ -33,6 +33,7 @@ git clone https://github.com/OnurBasci/Real_Time_Path_Tracing_With_SpatioTempora
 This project uses NVIDIA's nvpro_core library (see https://github.com/nvpro-samples/nvpro_core)
 To install it go to the projects folder and install it with the command
 ```
+cd .\Real_Time_Path_Tracing_With_SpatioTemporal_Filtering\
 git clone https://github.com/nvpro-samples/nvpro_core.git
 ```
 Finaly you can generate the project with cmake.
