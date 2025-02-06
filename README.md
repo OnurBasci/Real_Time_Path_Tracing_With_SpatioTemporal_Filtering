@@ -22,12 +22,6 @@ veloped. Despite these improvements, real-time path tracing remains an ongoing c
  adaptive spatiotemporal variance-guided filtering (A-SVGF) to implement a denoised real time
  path tracer.
 
- Some basic Git commands are:
-```
-git status
-git add
-git commit
-```
 
 ## Configuration
 The configuration is tested on Windows. It is not guaranteed to work on other OS.
