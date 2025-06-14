@@ -8,8 +8,8 @@
  film and visual effects due to its ability to generate photorealistic results.
  However, implementing path tracing in real-time rendering presents significant challenges.
  The primary difficulty arises from the immense computational power required to simulate the
- vast number of light interactions needed for high-quality images. Unlike traditional rasteri
-zation or even ray tracing techniques, which approximate lighting for efficiency, path tracing
+ vast number of light interactions needed for high-quality images. Unlike traditional rasterization
+ or even ray tracing techniques, which approximate lighting for efficiency, path tracing
  requires a large number of samples per pixel to reduce noise and achieve convergence. Real-time
  applications, such as video games, have strict performance constraints, often targeting 30 to 60
  frames per second, making the brute-force approach of path tracing impractical.
