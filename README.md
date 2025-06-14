@@ -1,8 +1,6 @@
 # Real_Time_Path_Tracing_With_SpatioTemporal_Filtering
 
 ## About Project
- 1 Introduction
- 
  Path tracing is a physically-based rendering technique that simulates the way light interacts
  with surfaces to produce highly realistic images. By tracing the paths of many light rays as
  they bounce around a scene, path tracing accurately models global illumination, soft shadows,
@@ -23,7 +21,7 @@ veloped. Despite these improvements, real-time path tracing remains an ongoing c
  adaptive spatiotemporal variance-guided filtering (A-SVGF) to implement a denoised real time
  path tracer.
 
-## requirements
+## Requirements
 Not all gpu supports Vulkan extensions such as VK_KHR_acceleration_structure or VK_KHR_ray_query. Please check before
 installing the project that your system supports these extentions. You can also check it from this link
 https://vulkan.gpuinfo.org/listdevicescoverage.php?extension=VK_KHR_ray_tracing_pipeline&platform=windows
