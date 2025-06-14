@@ -1,7 +1,8 @@
 # Real_Time_Path_Tracing_With_SpatioTemporal_Filtering
 
 ## About Project
-1 Introduction
+ 1 Introduction
+ 
  Path tracing is a physically-based rendering technique that simulates the way light interacts
  with surfaces to produce highly realistic images. By tracing the paths of many light rays as
  they bounce around a scene, path tracing accurately models global illumination, soft shadows,
